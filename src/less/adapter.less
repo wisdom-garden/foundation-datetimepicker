@@ -1,0 +1,90 @@
+@zindexDropdown: 1000;
+@grayDark: #333;
+@baseLineHeight: 18px;
+@tableBackground: transparent;
+// overall background-color
+@dropdownBackground: @white;
+@dropdownBorder: rgba(0, 0, 0, .2);
+@dropdownLinkColor: @grayDark;
+@dropdownLinkColorHover: @white;
+@dropdownLinkBackgroundHover: @linkColor;
+@gray-light: #999;
+@gray-lighter: #eee;
+@white: #fff;
+@linkColor: #08c;
+@btnPrimaryBackground: @linkColor;
+@orange: #f89406;
+@btn-primary-bg: #2ba6cb;
+@font-size-base: 12;
+
+.box-shadow(@shadow) {
+  -webkit-box-shadow: @shadow;
+  -moz-box-shadow: @shadow;
+  box-shadow: @shadow;
+}
+
+.border-radius(@radius: 5px) {
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+  border-radius: @radius;
+}
+
+.bootstrap-datetimepicker-widget {
+
+  &.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: @zindexDropdown;
+    float: left;
+    display: none; // none by default, but block on "open" of the menu
+    min-width: 160px;
+    list-style: none;
+    background-color: @dropdownBackground;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0, 0, 0, .2);
+    .border-radius(5px);
+    .box-shadow(0 5px 10px rgba(0, 0, 0, .2));
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding;
+    background-clip: padding-box;
+    *border-right-width: 2px;
+    *border-bottom-width: 2px;
+
+    // Normally inherited from bootstrap's `body`
+    color: #333333;
+    font-family: "Open Sans", sans-serif;
+    font-size: 13px;
+    line-height: @baseLineHeight;
+
+    th, td {
+      padding: 4px 5px;
+    }
+
+    ul {
+      padding: 0;
+    }
+  }
+
+  .collapse {
+    display: none;
+    &.in {
+      display: block;
+    }
+  }
+
+  .collapsing {
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    -webkit-transition: height 0.35s ease;
+    -moz-transition: height 0.35s ease;
+    -o-transition: height 0.35s ease;
+    transition: height 0.35s ease;
+  }
+
+  .accordion-toggle {
+    cursor: pointer;
+  }
+
+}
