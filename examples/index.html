@@ -5,6 +5,7 @@
     <script type="text/javascript" src="../src/js/transition.js"></script>
     <script type="text/javascript" src="../src/js/collapse.js"></script>
     <script type="text/javascript" src="../src/js/bootstrap-datetimepicker.js"></script>
+    <link rel="stylesheet" href="../bower_components/foundation/css/foundation.css"/>
     <link rel="stylesheet" href="../build/css/bootstrap-datetimepicker.css"/>
 </head>
 <body>
@@ -15,12 +16,12 @@
 <!--</div>-->
 
 <div>
-    <input type='text' class="form-control" id="datetimepicker2"/>
+    <input type='text' class="form-control" id="datetimepicker2" data-format="yyyy-MM-dd"/>
 </div>
 
 <script type="text/javascript">
     $(function () {
-        $('#datetimepicker1, #datetimepicker2').datetimepicker();
+        $('#datetimepicker1, #datetimepicker2').datetimepicker({pickTime: true, useSeconds: false, format: 'YYYY-MM-DD HH:mm:ss'});
     });
 </script>
 </body>
