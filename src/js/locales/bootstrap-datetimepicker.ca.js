@@ -11,7 +11,7 @@
         factory(window.moment); // Browser global
     }
 }(function (moment) {
-    return moment.locale('ca', {
+    return moment.updateLocale('ca', {
         months : "Gener_Febrer_Març_Abril_Maig_Juny_Juliol_Agost_Setembre_Octubre_Novembre_Desembre".split("_"),
         monthsShort : "Gen._Febr._Mar._Abr._Mai._Jun._Jul._Ag._Set._Oct._Nov._Des.".split("_"),
         weekdays : "Diumenge_Dilluns_Dimarts_Dimecres_Dijous_Divendres_Dissabte".split("_"),

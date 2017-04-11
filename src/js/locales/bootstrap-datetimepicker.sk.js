@@ -72,7 +72,7 @@
         }
     }
 
-    return moment.locale('sk', {
+    return moment.updateLocale('sk', {
         months : months,
         monthsShort : monthsShort,
         monthsParse : (function (months, monthsShort) {

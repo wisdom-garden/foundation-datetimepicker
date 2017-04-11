@@ -71,7 +71,7 @@
         }
     }
 
-    return moment.locale('cs', {
+    return moment.updateLocale('cs', {
         months : months,
         monthsShort : monthsShort,
         monthsParse : (function (months, monthsShort) {

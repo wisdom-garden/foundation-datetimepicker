@@ -67,7 +67,7 @@
         return nominative ? weekDay : weekDay.substring(0, weekDay.length - 2) + "į";
     }
 
-    return moment.locale("lt", {
+    return moment.updateLocale("lt", {
         months : "sausio_vasario_kovo_balandžio_gegužės_biržėlio_liepos_rugpjūčio_rugsėjo_spalio_lapkričio_gruodžio".split("_"),
         monthsShort : "sau_vas_kov_bal_geg_bir_lie_rgp_rgs_spa_lap_grd".split("_"),
         weekdays : relativeWeekDay,

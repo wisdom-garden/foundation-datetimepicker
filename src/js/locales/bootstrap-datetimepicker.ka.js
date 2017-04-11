@@ -38,7 +38,7 @@
         return weekdays[nounCase][m.day()];
     }
 
-    return moment.locale('ka', {
+    return moment.updateLocale('ka', {
         months : monthsCaseReplace,
         monthsShort : "იან_თებ_მარ_აპრ_მაი_ივნ_ივლ_აგვ_სექ_ოქტ_ნოე_დეკ".split("_"),
         weekdays : weekdaysCaseReplace,

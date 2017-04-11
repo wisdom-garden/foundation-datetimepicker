@@ -11,7 +11,7 @@
         factory(window.moment); // Browser global
     }
 }(function (moment) {
-    return moment.locale('uz', {
+    return moment.updateLocale('uz', {
         months : "январь_февраль_март_апрель_май_июнь_июль_август_сентябрь_октябрь_ноябрь_декабрь".split("_"),
         monthsShort : "янв_фев_мар_апр_май_июн_июл_авг_сен_окт_ноя_дек".split("_"),
         weekdays : "Якшанба_Душанба_Сешанба_Чоршанба_Пайшанба_Жума_Шанба".split("_"),

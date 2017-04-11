@@ -12,7 +12,7 @@
         factory(window.moment); // Browser global
     }
 }(function (moment) {
-    return moment.locale('ar-ma', {
+    return moment.updateLocale('ar-ma', {
         months : "يناير_فبراير_مارس_أبريل_ماي_يونيو_يوليوز_غشت_شتنبر_أكتوبر_نونبر_دجنبر".split("_"),
         monthsShort : "يناير_فبراير_مارس_أبريل_ماي_يونيو_يوليوز_غشت_شتنبر_أكتوبر_نونبر_دجنبر".split("_"),
         weekdays : "الأحد_الإتنين_الثلاثاء_الأربعاء_الخميس_الجمعة_السبت".split("_"),
