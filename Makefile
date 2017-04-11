@@ -6,6 +6,7 @@ build:
 	mkdir -p build/css
 	mkdir -p build/images
 	cp src/images/* build/images
+	cp src/js/bootstrap-datetimepicker.js build/js/bootstrap-datetimepicker.js
 	./node_modules/.bin/uglifyjs --comments \
 		-o build/js/bootstrap-datetimepicker.min.js \
 	       	src/js/bootstrap-datetimepicker.js
